@@ -1,0 +1,208 @@
+*{
+    padding: 0px;
+    margin:0px;
+    color:white;
+}
+header{
+    
+    background-color: rgba(0, 0, 0, 0.534);
+    color:rgb(53, 44, 44);
+    border:2px solid black;
+    border-radius: 2px;
+   
+    
+}
+header::before{
+    content:"";
+    position:absolute;
+     
+    background: url('images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.99;
+}
+ header h1 {
+    margin:3px auto;
+    text-align: center;
+    font-family: 'Supermercado One', cursive;
+}
+header p{
+    text-align: center;
+    font-family: 'Supermercado One', cursive;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    align-items: center;
+   
+}
+@media only screen and (min-width: 1175px) and (max-width:4500px) {
+  section {
+               grid-template-columns:700px 500px ;
+  
+  }
+}
+@media only screen and (min-width:780px) and (max-width: 1175px) {
+  section {
+               grid-template-columns:300px 200px ;
+               justify-content: start;
+  
+  }
+}
+@media only screen and (min-width:50px) and (max-width: 780px) {
+  section {
+              display:flex;
+               justify-content: start;
+  
+  }
+  .box{
+    flex-direction: row;
+  }
+}
+/* box  */
+.box{
+    height:500px;
+    /* background-color: rgba(0, 0, 0, 0.384); */
+    /* border:2px solid red; */
+   margin-right: 90px;
+    margin-top: 30px;
+}
+#left{
+    display: flex;
+    /* background-color: rgba(7, 7, 7, 0.404); */
+    flex-direction: column;
+   
+}
+#left footer h4{
+    position:relative;
+    top:61%;
+    left:7%;
+    bottom: 1px;
+    padding:2px 1px;
+  
+}
+#left footer button{
+    position:relative;
+    top:70%;
+    left:4%;
+  margin:1px 17px;
+  cursor:pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  
+}
+#left footer button:hover{
+   position: relative;
+   top:66%;
+  background-color: rgba(66, 57, 5, 0.301);
+  border: none;
+  
+}
+.table{
+    display: grid;
+  /* grid-template-columns: 20px 20px 20px; */
+  grid-template-rows: auto;
+  font-family: 'Bangers', cursive;
+  /* font-family: 'Festive', cursive; */
+  /* font-family: 'Lobster Two', cursive; */
+}
+.box .table button{
+    height: 40px;
+    width:40px;
+    border-radius: 70%;
+    background-color: rgba(247, 247, 247, 0.979);
+    border: none;
+    margin-left: 30px;
+ 
+    
+}
+.box .table label{
+    padding-top: 3px;
+    margin-bottom: 30px;
+    padding-left:30px;
+}
+#adress img{
+  height:39px;
+  width:39px;
+}
+#email img{
+  height: 24px;
+  width:29px;
+}
+#phone img{
+  height:29px;
+  width: 29px;
+
+}
+/* rigth box editing */
+right{
+    display: grid;
+    grid-template-areas: 
+
+    'rightname rightemail'
+    
+    'message message'
+    
+    'submit submit'
+    ;
+    border: none;
+}
+#rightname{
+  
+  grid-area: rightname;
+  background-color: rgba(0, 0, 0, 0.349);
+  height:40px;
+  margin-right: 40px;
+  text-align: center;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+#rightemail{
+  grid-area: rightemail;
+  background-color: rgba(0, 0, 0, 0.349);
+  height:40px;
+  margin-bottom: 50px;
+ text-align: center;
+ border: none;
+ border-radius: 5px;
+}
+#message{
+  grid-area: message;
+  background-color: rgba(0, 0, 0, 0.349);
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 5px;
+ 
+}
+#message {
+  grid-area: message;
+  background-color: rgba(0, 0, 0, 0.349);
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  
+}
+
+#submit{
+  grid-area: submit;
+  background-color: rgba(0, 0, 0, 0.349);
+  width:20px;
+
+  margin-top: 20px;
+  margin-left: 310px;
+}
+#submit button{
+  grid-area: submit;
+  background-color: rgb(247, 53, 19);
+  height:30px;
+  width:70px;
+  background-color: rgba(189, 74, 45, 0.137);
+  cursor: pointer;
+  border-radius: 4px;
+}
